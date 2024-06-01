@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Количество часов:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="автомашина (2000 руб./час)"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioMinivan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="минивэн (2500 руб./час)" />
+
+        <RadioButton
+            android:id="@+id/radioBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="автобус (3500 руб./час)" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+</LinearLayout>
